@@ -13,6 +13,7 @@ docker_run: docker_build
 TAG=Kahi5432/hello-world-printer
 
 docker_push: docker_build
+
     docker login --username Kahi5432 --password $$DOCKER_PASSWORD
     docker tag hello-world-printer $(TAG)
     docker push $(TAG)
