@@ -22,6 +22,8 @@ jobs:
 
       - run: make docker_build
 
+      - run: make docker_push
+
 workflows: 
 
   basic:  
