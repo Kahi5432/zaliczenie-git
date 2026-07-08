@@ -3,7 +3,7 @@ deps:
 	pip install -r test_requirements.txt  
 lint:
 	flake8 hello_world test
-.PHONY: deps lint run test docker_build docker_run docker_push
+.PHONY: .PHONY: deps lint run test docker_build docker_run docker_push
 test:
 	PYTHONPATH=. py.test --verbose -s
 docker_build: 
